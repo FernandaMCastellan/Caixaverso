@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Econômica Federal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            
+    }
+
+    html {
+            scroll-behavior: smooth;
+    }    
+
+    nav ul {
+        list-style: none;        
+    }      
+
+    nav ul a {
+        color: #F9FBFB; 
+        text-decoration: none;
+    }     
+
+    li:hover {
+        
+        cursor: pointer;
+        transform: scale(1.06);
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 10px ;
+        position: fixed;        
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 65px;
+        background-color:rgb(0, 93, 168, 0.9);      
+        
+    }   
+    
+    header img{
+        height: 40px;
+    }
+
+   header ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap:25px;
+        padding: 25px;
+   }
+   
+   .banner_home{
+    margin: 0;
+    background-image: url("https://www.caixa.gov.br/PublishingImages/nova-home/carrossel/sustentabilidade-2025/desktop.jpg");
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:  #F9FBFB;
+    }
+
+  main img{
+    height: 50px;
+  }  
+  .titulo{
+    margin-left: 15%;
+  }
+
+#produtos{
+    background-color:  #e4f7ff;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: rgb(0, 93, 168);
+    padding: 65px;
+    scroll-margin-top: 55px;
+    
+}
+
+.grid_container{
+    list-style: none;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px auto;
+    margin: 0 auto;
+    padding: 25px;
+    
+}
+
+.item{
+    background-color: #ffffff;
+
+}
+.item a{
+    text-decoration: none;
+}
+
+#produtos ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+        
+}
+
+#produtos ul li {
+    list-style: none;
+    background-color: #F9FBFB;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px #00000029;
+    max-width: 240px;
+    height: 240px;
+    padding: 20px;
+    
+    }
+
+
+
+#produtos p {
+     padding: 20px;
+    
+    }
+
+#taxas {
+    text-align: center;
+    height: auto;
+    padding: 4rem;
+    color: rgb(0, 93, 168);
+}
+.tabela{
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    text-align: center;
+
+    
+}
+
+.tabela th, .tabela td{
+    border:1px solid  #2E3078;
+    padding: 10px;
+}
+.tabela thead{
+    background-color: #e4f7ff;
+}
+
+#contato{
+    text-align: center;
+    height: auto;
+    padding: 40px;
+    color:   rgb(0, 93, 168);
+    background-color: #e4f7ff
+}
+
+form{
+    max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+    
+input, textarea, button{
+    padding: 5px;
+    border-radius: 6px;
+    font-size: larger;
+}    
+
+
+
+footer {
+    background-color:rgb(0, 93, 168, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        
+    }
+footer nav  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:25px;
+    height: 65px;
+    padding:25px;
+        
+    }
+footer p {
+    color: #F9FBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  header ul,
+  footer nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .titulo {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabela {
+    font-size: 0.9rem;
+  }
+  .tabela th,
+  .tabela td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  form input,
+  form textarea,
+  form button {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+  form button {
+    padding: 10px;
+  }
+}
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://www.caixa.gov.br/PublishingImages/nova-home/icones/x-volume-negativa-54.png" alt="logo da caixa">
+    <nav> 
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#taxas">Taxas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="home">
+        <div class="banner_home">
+        <div class="titulo">
+        <img src="https://logodownload.org/wp-content/uploads/2014/02/caixa-logo-6.png" alt="logo caixa">
+        <h1> Fazemos a diferença para o Brasil </h1>
+        </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Soluções para todos os momentos</p>
+        <ul>
+        <li>
+            <h3>Abertura de Conta (Corrente, Poupança e Digital)</h3>
+            <p>Permite movimentar dinheiro, fazer pagamentos, transferências e receber salários ou benefícios.</p>
+        </li>
+        <li>
+            <h3>Empréstimos e Financiamentos</h3>
+            <p>Oferece crédito pessoal, consignado, crédito habitacional e crédito para veículos.</p>
+        </li>
+        <li>
+            <h3>Cartões de Débito e Crédito</h3>
+            <p>Emissão e gestão de cartões para compras à vista ou parceladas, com ou sem anuidade.</p>
+        </li>
+        <li>
+            <h3>Investimentos (Poupança, CDB, LCI/LCA, Fundos)</h3>
+            <p>Aplicações financeiras para diferentes perfis de clientes.</p>
+        </li>
+        <li>
+            <h3>Seguros (Vida, Residencial, Auto, Prestamista)</h3>
+            <p>Proteção para bens e pessoas em diversas situações.</p>
+        </li>
+        <li>
+            <h3>Previdência Privada</h3>
+            <p>Oferece crédito pessoal, consignado, crédito habitacional e crédito para veículos.</p>
+        </li>
+        <li>
+            <h3>Pagamentos e Recebimentos</h3>
+            <p>Pagamento de contas, boletos, tributos, recarga de celular e recebimento de salários/benefícios.</p>
+        </li>
+        <li>
+            <h3>Atendimento de Benefícios Sociais</h3>
+            <p>Bolsa Família, FGTS, Seguro-Desemprego, PIS, INSS, Auxílio Gás, entre outros.</p>
+        </li>
+       
+    </ul>
+    </section>
+
+    <section id="taxas" >
+        <h2>Tabela de taxas para Empréstimo Pessoal (Pessoa Física)</h2>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Mês (mês/ano)</th>
+                    <th>Emprestimo Pessoal</th>
+                    <th>Cheque Especial</th>        
+                </tr>        
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maio/2025</td>
+                    <td>6,29 % ao mês</td>
+                    <td>8,00 % ao mês</td>
+                </tr>
+                <tr>
+                    <td>Junho/2025</td>
+                    <td>6,60 % ao mês</td>
+                    <td>8,00 % ao mês</td>
+                </tr>
+                <tr>
+                    <td>Julho/2025</td>
+                    <td>6,86 % ao mês</td>
+                    <td>8,00 % ao mês</td>
+                </tr>
+            </tbody>             
+        </table>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+    <form action="https://httpbin.org/post" method="post" target="_blank" class="form-contato">
+        <label for="atendimento"></label>
+               
+        <label for="nome"></label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+         
+        <label for="mensagem"></label>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    </section>
+
+<footer>
+        <nav> 
+             <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#taxas">Taxas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 Nova Caixa Econômica Federal</p>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook fa-2xl" fa-lg style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a></li>
+            </ul>
+        </nav>
+
+</footer>
+
+</main>
+
+
+
+</body>
+</html>

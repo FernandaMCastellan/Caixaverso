@@ -1,0 +1,20 @@
+https://bruno-cabral.notion.site/1389-Front-end-Est-tico-2389e0ee3fbd8060aea0c3d60976c59e
+
+
+ https://www.caixa.gov.br/PublishingImages/nova-home/carrossel/sustentabilidade-2025/desktop.jpg
+
+.btn-acesso {
+    box-shadow: 0px 3px 6px #00000029;
+    background: #F9FBFB 0% 0% no-repeat padding-box;
+    margin: 0 1% 0 1%;
+    border-radius: 10px;
+    border: 1px solid var(--cinza-200);
+    flex: 0 1 21%;
+    height: 230px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #005CA9;
+}
