@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <h2>Pesquise sua receita:</h2>
+    <form method="get" action="https://www.themealdb.com/api/json/v1/1/filter.php" target="_blank">
+    
+    
+    <label for="ingrediente">Digite um ingrediente:</label>
+    <select name="i" id="ingrediente" >
+        <option value="" >-Selecione-</option>
+        <option value="chicken">chicken</option>
+        <option value="beef">beef</option>
+        <option value="salmon">salmon</option>
+        <option value="rice">rice</option>
+        <option value="cheese">cheese</option>
+
+
+    </select>
+
+    <br><br>
+    <label for="categoria">Categoria</label>
+    <select name="c" id="categoria" required>
+        <option value="">-Selecione-</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Beef">Beef</option>
+        <option value="Pasta">Pasta</option>
+    </select>
+
+    <br><br>
+    <label for="regiao">Região</label>
+    <select id="regiao" name="a" >
+    <option value="">-Selecione-</option>
+    <option value="Italian">Italian</option>
+    <option value="Mexican">Mexican</option>
+    <option value="Chinese">Chinese</option>
+    <option value="American">American</option>
+    <option value="Moroccan">Moroccan</option>
+
+    </select>
+    <br><br>
+
+    <button type="submit">Buscar Receitas</button>
+</form>
+
+    <script>
+
+    </script>
+</body>
+</html>

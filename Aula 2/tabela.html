@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda da Semana</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+        }
+        h2{
+            text-align: center;
+            color: lightcyan;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            border-collapse: collapse;
+            width: 20%;
+            align-content: center;
+            
+        }
+        th, td{
+            border: 1px solid darkgrey;
+            padding: 8px;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;            
+        }
+        th{
+            background-color: darkslategrey;
+            color:white;
+            font-size: 10px;
+            
+        }
+        td{
+            background-color: white ;
+            color: lightslategrey;
+            font-size: 10px;
+        }
+        .colspam{
+            background-color: linen;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>Agenda da Semana</h2>
+ 
+
+    <table>
+        <thead>
+            <tr>
+            <th>Dia</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Segunda</td>                
+                <td colspan="2" class="colspam" class="bold">Reunião com equipe</td>
+                <td>Almoço Livre</td>
+                <td>Check-ins</td>
+            </tr>
+            <tr>
+                <td>Terça</td>                
+                <td>Emails</td>
+                <td>Planejamento</td>
+                <td colspan="2" class="colspam" class="bold">Apresentação para Diretoria</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>                
+                <td colspan="4" class="colspam" class="bold">Treinamento Externo (manhã inteira)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
